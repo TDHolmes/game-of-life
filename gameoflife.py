@@ -76,7 +76,7 @@ class GameOfLife:
                 else:
                     string += print_color("█", "black", True)
             string += "\n  "
-            sys.stdout.write("\x1b[2J\x1b[H")
+            sys.stdout.write("\x1b[H")
         sys.stdout.write(string)
         sys.stdout.flush()
 
